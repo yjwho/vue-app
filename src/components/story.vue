@@ -42,6 +42,10 @@ export default {
     methods:{
         toggleShowButton(){
             this.showButton = !this.showButton;
+            //axios call
+            // axios.get(serverLoc+"/path/toEndpoint").then(response => {
+            //    // do something with response here
+            //});
         }
     },
     mounted(){

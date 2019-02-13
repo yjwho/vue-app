@@ -96,10 +96,98 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather|Rubik+Mono+One');
+html {
+  height: 100%;
+}
+body {
+  text-align: center;
+  background: linear-gradient(to bottom right, #fccdd3, #c9a8bc, #9386a0, #5e677e, #2f4858);
+  background-size: cover;
+}
+
+h1, h2 {
+  display: inline-block;
+  color: #FFFFFF
+}
+h1 {
+  font-size: 80px;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+h2 {
+  font-size: 20px;
+  font-family: 'Merriweather', sans-serif;
+}
+
+/*Menu Bar Styling*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+li {
+  float: left;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #9A89B4;
+}
+
+.active {
+  background-color: #4A4453;
+}
+
+/* Button Styling */
+.button {
+  font-family: 'Lato', sans-serif;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #F05E80; 
+  border: 2px solid #F05E80;
+}
+
+.button1:hover {
+  background-color: white;
+  color: #F05E80;
+}
+
+
+
+/*
+* default HelloWorld component styling
+
 h3 {
   margin: 40px 0 0;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -111,4 +199,5 @@ li {
 a {
   color: #42b983;
 }
+*/
 </style>
