@@ -22,6 +22,7 @@
                     </div>
                     <div>
                         <button @click.prevent="submitPost()" class="button is-info">Submit</button>
+                        
                     </div>
                 </div>
             </div>
@@ -61,15 +62,38 @@ export default {
 <style lang="scss" scoped>
 
 .section {
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0.5rem;
 }
 
 .media {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     border: 1px solid #e6e7e9;
     padding: 1em 1.5em 0.5em 1.5em;
     border-radius: 0.3em;
 }
 
+</style>
+
+<style scoped>
+    button{
+        float: right;
+        background-image: linear-gradient(45deg,#ABE5E6,#7062F0);
+        border: white;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        text-decoration: none;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    }
+
+    .button:hover {
+        background-image:linear-gradient(225deg, #ABE5E6,#7062F0);
+        color: white;
+        border: 2px #7062F0;
+    }
 </style>

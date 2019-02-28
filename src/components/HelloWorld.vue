@@ -1,9 +1,25 @@
 <template>
   <div class="hello">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <h1>{{ msg }}</h1>
-    <p>
-      A paragraph here.
-    </p>
+    <br>
+    <br>
+    <br>
+
+    <h2>
+      Come read about others' experiences with racism and microaggressions on campus and record your own experiences!
+    </h2>
+
+    <br>
+    <br>
+    <br>
+<router-link to="/issues" tag="submit">
+    <button class="button1" >VIEW OTHERS' STORIES</button>
+  </router-link>
   </div>
 </template>
 
@@ -17,39 +33,49 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather|Rubik+Mono+One');
+<style scoped>
 html {
   height: 100%;
 }
-body {
-  text-align: center;
-  
-  background: linear-gradient(45deg,#ABE5E6,#7062F0);
-  /*linear-gradient(to bottom right, #fccdd3, #c9a8bc, #9386a0, #5e677e, #2f4858);*/
-  background-size: cover;
+#hello{
+  height: 100%;
+  margin-top: 40px;
 }
 
-
-
-
-/*
-* default HelloWorld component styling
-
-h3 {
-  margin: 40px 0 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
+h1, h2 {
   display: inline-block;
-  margin: 0 10px;
+  color: #FFFFFF
 }
-a {
-  color: #42b983;
+h1 {
+  font-size: 100px;
+  font-family: 'Rubik Mono One', sans-serif;
 }
-*/
+h2 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* Button Styling */
+
+.button1 {
+  background-color: transparent; 
+  border: 2px solid white;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: white;
+  color: #7062F0;
+}
+
+
 </style>

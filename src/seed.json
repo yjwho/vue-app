@@ -2,37 +2,37 @@
     "posts": [
       {
         "id": 1,
-        "title": "Yellow Pail",
-        "content": "On-demand sand castle construction expertise.",
+        "title": "Tacos",
+        "content": "Someone said we should let more Mexicans move to the US so there will be more taco restaurants.",
         "url": "#",
-        "votes": 16,
+        "votes": 19,
         "avatar": "./images/avatars/daniel.jpg",
         "submissionImage": "./images/submissions/image-yellow.png"
       },
       {
         "id": 2,
-        "title": "Supermajority: The Fantasy Congress League",
-        "content": "Earn points when your favorite politicians pass legislation.",
+        "title": "Pretty for a black girl",
+        "content": "Someone said to me 'you are the best looking black girl I've met'",
         "url": "#",
-        "votes": 11,
+        "votes": 8,
         "avatar": "./images/avatars/kristy.png",
         "submissionImage": "./images/submissions/image-rose.png"
       },
       {
         "id": 3,
-        "title": "Tinfoild: Tailored tinfoil hats",
-        "content": "We have your measurements and shipping address.",
+        "title": "Jackie Chan",
+        "content": "My first name is Jackie, and I'm Asian. Someone said to me, 'you should marry someone whose last name is Chan.'",
         "url": "#",
-        "votes": 17,
+        "votes": 2,
         "avatar": "./images/avatars/veronika.jpg",
         "submissionImage": "./images/submissions/image-steel.png"
       },
       {
         "id": 4,
-        "title": "Haught or Naught",
-        "content": "High-minded or absent-minded? You decide.",
+        "title": "Your food is so weird!",
+        "content": "Someone said to me, 'Ewwwww, what's that? You are always eating weird food. But you are so cute. I love you.'",
         "url": "#",
-        "votes": 9,
+        "votes": 19,
         "avatar": "./images/avatars/molly.png",
         "submissionImage": "./images/submissions/image-aqua.png"
       }

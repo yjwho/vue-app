@@ -54,11 +54,3 @@ export default {
     }
 }
 </script>
-
-<style>
-/* everythin under here only applies to this
-template component */
-#issue-title {
-    color: green;
-}
-</style>

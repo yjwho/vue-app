@@ -1,17 +1,28 @@
 <template>
     <div>
+        <br>
+        <br>
+        <br>
         <div class="section header">
-            <h2 class="title has-text-centered dividing-header">UpVote!</h2>
+            <h2 class="title has-text-centered dividing-header">OUR STORIES</h2>
         </div>
 
+    <div>
+
+
+    </div>
+
         <div class="content">
+            <b-button v-b-toggle.collapse3 class="m-1">RECORD MY EXPERIENCE</b-button>
+            <b-collapse id="collapse3">
+                    <br>
+                    <SubmitBox @submittedPost="createPost"></SubmitBox>
+            </b-collapse>
+            <br><br>
             <Post v-for="a in sortedSubmissions" :post="a" :key="a.id"></Post>
-            <SubmitBox @submittedPost="createPost"></SubmitBox>
         </div>
-        
-        <footer class="footer">
-            <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-        </footer>
+
+        <footer class="footer"></footer>
     </div>
 </template>
 
@@ -28,7 +39,7 @@ export default {
     data: function () {
         return {
             submissions: seed.posts
-        }
+            }
     },
     computed: {
         sortedSubmissions: function () {
@@ -59,6 +70,33 @@ export default {
 }
 
 .footer {
-    padding: 1rem;
+    padding: 2rem;
+    background-color: #484C91;
+}
+
+h2{
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+}
+
+button{
+    background-image: linear-gradient(45deg,#ABE5E6,#7062F0);
+    border: white;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.m-1:hover {
+    background-image:linear-gradient(225deg, #ABE5E6,#7062F0);
+    color: white;
+    border: 2px #7062F0;
 }
 </style>
