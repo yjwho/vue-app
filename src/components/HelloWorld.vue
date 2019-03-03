@@ -11,7 +11,7 @@
     <br>
 
     <h2>
-      Come read about others' experiences with racism and microaggressions on campus and record your own experiences!
+      Read about others' experiences with racism and microaggressions <b>on campus</b> and record your own!
     </h2>
 
     <br>
@@ -55,7 +55,9 @@ h2 {
   font-family: 'Lato', sans-serif;
 }
 
-
+h4 {
+  font-weight: bolder;
+}
 /* Button Styling */
 
 .button1 {

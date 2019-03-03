@@ -8,18 +8,17 @@
 
             <div class="media-content">
                 <div class="content">
-                    <p>
+                    
                         <strong>
-                            <strong class="has-text-primary">{{ post.title }}</strong>
-                            <span class="tag is-small">#{{ post.id }}</span>
+                            <strong class="has-text-primary">{{ post.title }} </strong>
+                            <span class="tag is-small">{{ post.time }}</span>
                         </strong>
                         <br>
-                            {{ post.content }}
-                        <br>
+                            <p class="has-text-dark">{{ post.content }}</p>
                         <small class="is-size-7">
                             
                         </small>
-                    </p>
+                    
                 </div>
 <!--
                     <article class="media">
@@ -43,13 +42,10 @@
 -->
             </div>
 
-
-
             <div class="media-right">
-                    <h3 class="has-text-primary">{{ post.votes }}<font-awesome-icon icon=chevron-up></font-awesome-icon></h3>
+                    <h3 class="has-text-primary">{{ post.votes }} <font-awesome-icon icon=chevron-up></font-awesome-icon></h3>
                     <button @click="increaseVotes()" class="button-primary">ME TOO</button>
             </div>
-
         </article>
     </div>
 </template>
@@ -136,7 +132,7 @@ export default {
 }
 
 .button-primary:hover {
-    background-image:linear-gradient(225deg, #FD5A49,#FDDC98);
+    background-image:linear-gradient(45deg, rgb(224, 80, 64),rgb(231, 177, 68));
     color: white;
     border: 2px #FDDC98;
 }

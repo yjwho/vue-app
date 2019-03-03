@@ -11,14 +11,9 @@
 
 
     </div>
-
         <div class="content">
-            <b-button v-b-toggle.collapse3 class="m-1">RECORD MY EXPERIENCE</b-button>
-            <b-collapse id="collapse3">
-                    <br>
-                    <SubmitBox @submittedPost="createPost"></SubmitBox>
-            </b-collapse>
-            <br><br>
+            <br>
+            <SubmitBox @submittedPost="createPost"></SubmitBox>
             <Post v-for="a in sortedSubmissions" :post="a" :key="a.id"></Post>
         </div>
 
@@ -77,6 +72,7 @@ export default {
 h2{
     font-size: 50px;
     font-family: 'Lato', sans-serif;
+    color: #3D3949;
 }
 
 button{
@@ -94,9 +90,4 @@ button{
     border-radius: 5px;
 }
 
-.m-1:hover {
-    background-image:linear-gradient(225deg, #ABE5E6,#7062F0);
-    color: white;
-    border: 2px #7062F0;
-}
 </style>

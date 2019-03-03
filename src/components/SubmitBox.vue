@@ -1,5 +1,9 @@
 <template>
     <div class="section post">
+        <b-button v-b-toggle.collapse3 class="m-1">RECORD MY EXPERIENCE</b-button>
+        <b-collapse id="collapse3">
+        <br>
+
         <article class="media">
 
             <figure class="media-left">
@@ -28,6 +32,7 @@
             </div>
 
         </article>
+        </b-collapse>
     </div>
 </template>
 
@@ -41,11 +46,17 @@ export default {
     },
     methods: {
         submitPost: function () {
+            var today = new Date();
+            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            var dateTime = date+' '+time;
+
             var post = {
                 title: this.title,
                 content: this.content,
                 // TODO: create login system and set up below fields.
                 url: "#",
+                time: dateTime,
                 avatar: "./images/avatars/daniel.jpg",
                 submissionImage: "./images/submissions/image-yellow.png"
             }
@@ -54,6 +65,9 @@ export default {
 
             this.title = '';
             this.content = '';
+
+            //collapse the collapsable button
+            this.$root.$emit('bv::toggle::collapse', 'collapse3')
         }
     }
 };
@@ -92,8 +106,19 @@ export default {
     }
 
     .button:hover {
-        background-image:linear-gradient(225deg, #ABE5E6,#7062F0);
+        background-image:linear-gradient(45deg, rgb(132, 195, 196),rgb(68, 57, 172));
         color: white;
         border: 2px #7062F0;
+    }
+
+    .m-1:hover {
+    background-image:linear-gradient(45deg, rgb(132, 195, 196),rgb(68, 57, 172));
+    color: white;
+    border: 4px #7062F0;
+    }
+
+    .m-1 {
+        float:initial;
+        border-radius: 4px;
     }
 </style>

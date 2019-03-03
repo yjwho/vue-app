@@ -1,11 +1,12 @@
 {
     "posts": [
       {
-        "id": 1,
+        "id": "1",
         "title": "Tacos",
         "content": "Someone said we should let more Mexicans move to the US so there will be more taco restaurants.",
         "url": "#",
-        "votes": 19,
+        "time": "2019-1-10 18:12:40",
+        "votes": 11,
         "avatar": "./images/avatars/daniel.jpg",
         "submissionImage": "./images/submissions/image-yellow.png"
       },
@@ -14,6 +15,7 @@
         "title": "Pretty for a black girl",
         "content": "Someone said to me 'you are the best looking black girl I've met'",
         "url": "#",
+        "time": "2018-8-3 11:12:40",
         "votes": 8,
         "avatar": "./images/avatars/kristy.png",
         "submissionImage": "./images/submissions/image-rose.png"
@@ -23,6 +25,7 @@
         "title": "Jackie Chan",
         "content": "My first name is Jackie, and I'm Asian. Someone said to me, 'you should marry someone whose last name is Chan.'",
         "url": "#",
+        "time": "2019-2-7 07:12:40",
         "votes": 2,
         "avatar": "./images/avatars/veronika.jpg",
         "submissionImage": "./images/submissions/image-steel.png"
@@ -32,6 +35,7 @@
         "title": "Your food is so weird!",
         "content": "Someone said to me, 'Ewwwww, what's that? You are always eating weird food. But you are so cute. I love you.'",
         "url": "#",
+        "time": "2018-12-31 15:04:29",
         "votes": 19,
         "avatar": "./images/avatars/molly.png",
         "submissionImage": "./images/submissions/image-aqua.png"
