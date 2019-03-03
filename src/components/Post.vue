@@ -14,13 +14,10 @@
                             <span class="tag is-small">{{ post.time }}</span>
                         </strong>
                         <br>
-                            <p class="has-text-dark">{{ post.content }}</p>
-                        <small class="is-size-7">
-                            
-                        </small>
-                    
+                        <span class="has-text-dark" ><small class="is-size-5">{{ post.content }}</small></span>
+                        <p><small><a>Reply</a></small></p>
                 </div>
-<!--
+
                     <article class="media">
                         <figure class="media-left">
                             <p class="image is-48x48">
@@ -29,17 +26,14 @@
                         </figure>
                         <div class="media-content">
                             <div class="content">
-                            <p>
-                                <strong>Sean Brown</strong>
-                                <br>
+                                <strong class="is-size-5">Sean Brown</strong>
+                                <div class="is-size-6">
                                 Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
-                                <br>
+                                </div>
                                 <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
-                            </p>
                             </div>
                         </div>
-                    </article>    
--->
+                    </article> 
             </div>
 
             <div class="media-right">
@@ -95,23 +89,6 @@ export default {
     align-content: center;
 }
 // Once you reach 20 votes.
-@mixin border-gradient($from, $to, $weight: 0) {
-    $mix-main: mix($from, $to);
-    $mix-sub-from: mix($mix-main, $from);
-    $mix-sub-to: mix($mix-main, $to);
-
-    box-shadow: 0 5px 0 $weight rgba($mix-sub-to, .25),
-                0 -5px 0 $weight rgba($mix-sub-from, .25),
-                5px 0 0 $weight rgba($mix-sub-to, .25),
-                -5px 0 0 $weight  rgba($mix-sub-from, .25),
-                5px -5px 0 $weight rgba($mix-main, .5),
-                -5px 5px 0 $weight rgba($mix-main, .5),
-                5px 5px 0 $weight rgba($to, .75),
-                -5px -5px 0 $weight rgba($from, .75);
-}
-.hot {
-    @include border-gradient(rgb(255, 72, 22), rgb(255, 185, 0));
-}
 
 </style>
 
